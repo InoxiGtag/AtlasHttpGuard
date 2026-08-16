@@ -1,2 +1,2 @@
-# AtlasHttpGuard
-A simple firewall for Atlas Menu that blocks untrusted connections and shows you exactly where it's trying to connect.
+# HttpGuard
+If you want to use Atlas Menu but don't trust it because the code is obfuscated, HttpGuard basically acts as a filter for it. It blocks every web request Atlas tries to make unless the link is on the [AtlasLinksTrusted](https://raw.githubusercontent.com/InoxiGtag/AtlasInfo-ForDevs/refs/heads/main/AtlasLinksTrusted) GitHub repository. You can see every single URL it tries to ping right in your BepInEx console, so nothing happens behind your back.
