@@ -10,7 +10,7 @@ using UnityEngine.Networking;
 
 namespace HttpGuard;
 
-[BepInPlugin("com.inoxi.gtag.httpguard", "HttpGuard", "1.0.0")]
+[BepInPlugin(PluginInfo.GUID, PluginInfo.Name, PluginInfo.Version)]
 public class Plugin : BaseUnityPlugin
 {
     private const string ListUrl = "https://raw.githubusercontent.com/InoxiGtag/AtlasInfo-ForDevs/refs/heads/main/AtlasLinksTrusted";
