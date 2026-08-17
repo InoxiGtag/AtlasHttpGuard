@@ -76,8 +76,8 @@ public class Plugin : BaseUnityPlugin
         private static bool Prefix(HttpWebRequest __instance)
         {
             if (!CheckRequest(__instance.RequestUri.AbsoluteUri))
-                throw new WebException($"HTTP request blocked by HttpGuard: {__instance.RequestUri}", WebExceptionStatus.AccessDenied);
-            
+                throw new WebException($"HTTP request blocked by HttpGuard: {__instance.RequestUri}", WebExceptionStatus.RequestCanceled);
+
             return true;
         }
     }
@@ -95,3 +95,5 @@ public class Plugin : BaseUnityPlugin
 
             return true;
         }
+    }
+}
