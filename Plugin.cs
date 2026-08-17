@@ -44,7 +44,6 @@ namespace HttpGuard
                 instance = this;
                 HarmonyPatches.ApplyHarmonyPatches();
 
-                // Fire and forget the async load safely
                 _ = LoadAllowlistAsync();
             }
             catch (Exception ex)
@@ -90,7 +89,6 @@ namespace HttpGuard
                 return false;
             }
 
-            // Local file access (e.g. Atlas loading its own audio/sounds) is always allowed.
             if (uri.Scheme == Uri.UriSchemeFile)
             {
                 Debug.Log($"[HttpGuard] ACCEPTED (local file) -> {url}");
