@@ -1,4 +1,4 @@
-namespace AtlasHttpGuard
+namespace HttpGuard
 {
     internal class PluginInfo
     {
