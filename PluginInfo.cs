@@ -2,8 +2,8 @@ namespace HttpGuard
 {
     internal class PluginInfo
     {
-        public const string GUID = "com.inoxi.gtag.httpguard";
+        public const string GUID = "com.inoxi.gorillatag.httpguard";
         public const string Name = "AtlasHttpGuard";
-        public const string Version = "1.0.0";
+        public const string Version = "1.0.4";
     }
 }
