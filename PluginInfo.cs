@@ -1,4 +1,4 @@
-namespace RagdollMod
+namespace AtlasHttpGuard
 {
     internal class PluginInfo
     {
