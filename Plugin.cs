@@ -20,20 +20,30 @@ namespace HttpGuard
 
         private static readonly HashSet<string> AllowedHosts = new(StringComparer.OrdinalIgnoreCase)
         {
-            // HttpGuard / Atlas resources
-            "seralyth.software",
-            // Gorilla Tag official services
-            "gtag-cf.com",
-            "aa-mothership.com",
-            "mothership.gg",
-            "modapi.io",
-            "mod.io",
-            "gtagmods.com",
-            "playfabapi.com",
-            "photonengine.com",
-            "steamcommunity.com",
-            "steamstatic.com",
-            "thumb.modcdn.io",
+          // HttpGuard / Atlas resources
+          "seralyth.software",
+
+          // Gorilla Tag official services
+          "gtag-cf.com",
+          "mmr-prod.gtag-cf.com",
+          "auth-prod.gtag-cf.com",
+          "temp-prod.gtag-cf.com",
+          "hppromo-prod.gtag-cf.com",
+          "iap.gtag-cf.com",
+          "kid-prod.gtag-cf.com",
+          "prog-prod.gtag-cf.com",
+          "title-data.gtag-cf.com",
+          "voting-prod.gtag-cf.com",
+          "aa-mothership.com",
+          "mothership.gg",
+          "modapi.io",
+          "mod.io",
+          "gtagmods.com",
+          "playfabapi.com",
+          "photonengine.com",
+          "steamcommunity.com",
+          "steamstatic.com",
+          "thumb.modcdn.io",
         };
 
         private void Start()
